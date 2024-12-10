@@ -1,11 +1,10 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   experimental: {
-    ppr: "incremental",
+    ppr: "incremental", // Ensure this is needed
   },
-  distDir: "build",
+  distDir: ".next", // Change back to default if not necessary
 };
 
 export default nextConfig;
